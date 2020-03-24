@@ -1,0 +1,70 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: slategrey;
+}
+div.parallax-container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    background-position: center;
+}
+div.parallax-container:nth-of-type(1) {
+    background-image: url('https://images.unsplash.com/photo-1524313118018-d8139913a0fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80');
+}
+div.parallax-container:nth-of-type(2) {
+    background-image: url('https://images.unsplash.com/photo-1445916999081-eee032425401?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80');
+}
+div.parallax-container:nth-of-type(3) {
+    background-image: url('https://images.unsplash.com/photo-1584058878169-03e19f2429ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=1868&q=80');
+}
+div.parallax-container > div {
+    margin: auto;
+    padding: 1em;
+    grid-row: 2;
+    text-align: center;
+    border-radius: 15px;
+    max-width: 550px;
+    font-size: x-large;
+}
+div.parallax-container div p,
+div.parallax-container div ul,
+div.parallax-container div h1,
+div.parallax-container div h3 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 0.25em;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    main {
+        background-size: 168%;
+    }
+    div.parallax-container {
+        background-size: 168%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    main {
+        background-size: 100%;
+    }
+    div.parallax-container {
+        background-size: 100%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {
+} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {
+} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {
+} */
